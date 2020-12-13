@@ -6,5 +6,5 @@
  define('DB','ahmadabu_uas7');
 
 //membuat koneksi dengan database
- $koneksi = mysqli_connect(HOST, USER, PASS, DB) or die(mysqli_errno());
+ $koneksi = new mysqli(HOST, USER, PASS, DB) or die(mysqli_errno());
 ?>
