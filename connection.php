@@ -1,6 +1,6 @@
 <?php
 //mendefinisikan konstanta
- define('HOST','95.217.50.185');
+ define('HOST','localhost');
  define('USER','ahmadabu_uas7');
  define('PASS','Salam 1 Jiwa');
  define('DB','ahmadabu_uas7');
