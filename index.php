@@ -2,8 +2,8 @@
 include 'connection.php';
 
 $no = 1;
-$query = mysqli_query($koneksi, "SELECT * FROM data_mhs");
-while($row = mysqli_fetch_array($query)){
+$query = mysqli_query($conn, "SELECT * FROM data_mhs");
+while($row = mysqli_fetch_assoc($query)) {
 ?>
 
 <!DOCTYPE html>
