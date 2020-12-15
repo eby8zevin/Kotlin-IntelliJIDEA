@@ -1,5 +1,9 @@
 <?php
 include 'connection.php';
+
+$no = 1;
+$query = mysqli_query($koneksi, "SELECT * FROM data_mhs");
+while($row = mysqli_fetch_array($query)){
 ?>
 
 <!DOCTYPE html>
@@ -27,11 +31,12 @@ include 'connection.php';
       </thead>
       <tbody>
         <tr>
-          <td>No</td>
-          <td>NIM</td>
-          <td>Nama</td>
+          <td><?php echo $no++ ?></td>
+          <td><?php echo $row['data_nim']; ?></td>
+          <td><?php echo $row['data_nama']; ?></td>
         </tr>
       </tbody>
+      <?php } ?>
     </table>
   </div>
 
