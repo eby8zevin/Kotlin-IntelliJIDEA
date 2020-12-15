@@ -26,15 +26,16 @@ include 'connection.php';
         </tr>
       </thead>
       <tbody>
-        <?php $no = 1;
-        $query = $conn->query("SELECT * FROM data_mhs");
-        while($row = $query->fetch_assoc()) { ?>
+        <?php $no = 1; ?>
+        <?php $query = $conn->query("SELECT * FROM data_mhs"); ?>
+        <?php while($row = $query->fetch_assoc()) { ?>
         <tr>
-          <td><?php echo $no++ ?></td>
+          <td><?php echo $no; ?></td>
           <td><?php echo $row['data_nim']; ?></td>
           <td><?php echo $row['data_nama']; ?></td>
         </tr>
       </tbody>
+      <?php $no++ ?>
       <?php } ?>
     </table>
   </div>
