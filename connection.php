@@ -14,5 +14,6 @@
  }
   echo "Connected successfully";
  //mysqli_close($conn);
+echo "<br>";
 print_r(PDO::getAvailableDrivers());
 ?>
