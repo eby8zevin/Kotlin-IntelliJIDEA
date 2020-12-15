@@ -1,20 +1,19 @@
 <?php
 //mendefinisikan konstanta
- define('HOST','localhost');
- define('USER','ahmadabu_uas7');
- define('PASS','Salam 1 Jiwa');
- define('DB','ahmadabu_uas7');
+$host = "localhost";
+$user = "ahmadabu_uas7";
+$pass = "Salam 1 Jiwa";
+$dbnm = "ahmadabu_uas7";
 
 //membuat koneksi dengan database
- $conn = new mysqli(HOST, USER, PASS, DB);
+$conn = new mysqli($host, $user, $pass, $dbnm);
 
 // Check connection
- if ($conn) {
-  echo "Connected successfully";
-  
- }
-  die("Connection failed: " . mysqli_connect_error());
- //mysqli_close($conn);
+if ($conn->connect_error) {
+ die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+//mysqli_close($conn);
 echo "<br>";
 print_r(PDO::getAvailableDrivers());
 ?>
