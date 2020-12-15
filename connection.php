@@ -1,7 +1,7 @@
 <?php
 //mendefinisikan konstanta
 $host = "localhost";
-$user = "ahmadabu_uas7";
+$user = "root";
 $pass = "Salam 1 Jiwa";
 $dbnm = "ahmadabu_uas7";
 
