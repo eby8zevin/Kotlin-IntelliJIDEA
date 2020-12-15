@@ -2,7 +2,7 @@
 include 'connection.php';
 
 $query = "SELECT * FROM data_mhs";
-$result = mysqli_query($koneksi, $query);
+$result = mysqli_query($conn, $query);
 $array_data = array();
 
 while($row = mysqli_fetch_assoc($result))
