@@ -1,9 +1,5 @@
 <?php
 include 'connection.php';
-
-$no = 1;
-$query = mysqli_query($conn, "SELECT * FROM data_mhs");
-while($row = mysqli_fetch_assoc($query)) {
 ?>
 
 <!DOCTYPE html>
@@ -30,6 +26,9 @@ while($row = mysqli_fetch_assoc($query)) {
         </tr>
       </thead>
       <tbody>
+        <?php $no = 1;
+        $query = mysqli_query($conn, "SELECT * FROM data_mhs");
+        while($row = mysqli_fetch_assoc($query)) { ?>
         <tr>
           <td><?php echo $no++ ?></td>
           <td><?php echo $row['data_nim']; ?></td>
