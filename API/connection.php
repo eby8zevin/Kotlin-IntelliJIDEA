@@ -7,8 +7,8 @@ $dbnm = "ahmadabu_uas7";
 $conn = mysqli_connect($host, $user, $pass, $dbnm);
 
 // Check connection
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
-}
-echo "Connected successfully";
+// if (!$conn) {
+//   die("Connection failed: " . mysqli_connect_error());
+// }
+// echo "Connected successfully";
 ?>
