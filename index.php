@@ -27,8 +27,8 @@ include 'connection.php';
       </thead>
       <tbody>
         <?php $no = 1;
-        $query = mysqli_query($conn, "SELECT * FROM data_mhs");
-        while($row = mysqli_fetch_array($query)) { ?>
+        $query = $conn->query("SELECT * FROM data_mhs");
+        while($row = $query->fetch_assoc()) { ?>
         <tr>
           <td><?php echo $no++ ?></td>
           <td><?php echo $row['data_nim']; ?></td>
