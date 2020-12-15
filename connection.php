@@ -9,10 +9,11 @@
  $conn = new mysqli(HOST, USER, PASS, DB);
 
 // Check connection
- if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
- }
+ if ($conn) {
   echo "Connected successfully";
+  
+ }
+  die("Connection failed: " . mysqli_connect_error());
  //mysqli_close($conn);
 echo "<br>";
 print_r(PDO::getAvailableDrivers());
