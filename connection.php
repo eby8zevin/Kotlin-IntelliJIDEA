@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
-$user = "ahmadabuhasan";
-$pass = "Salam 1 Jiwa";
-$dbnm = "ahmadabu_uas7";
+$user = "username";
+$pass = "password";
+$dbnm = "dbname";
 
 //MySQLi Object-Oriented
 $conn = new mysqli($host, $user, $pass, $dbnm);
