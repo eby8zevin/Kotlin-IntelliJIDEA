@@ -18,6 +18,9 @@
     </form>
 
 <?php
+	
+include "../connection.php";
+
   if(isset($_POST['simpan'])) {
   
   $nim = $_POST['nim'];
