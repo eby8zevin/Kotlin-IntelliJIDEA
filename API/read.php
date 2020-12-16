@@ -1,5 +1,5 @@
 <?php
-include '../github/connection.php';
+include '../github/API/connection.php';
 
 $query = "SELECT * FROM data_mhs";
 $result = mysqli_query($connn, $query);
