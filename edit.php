@@ -1,5 +1,10 @@
 <?php
 include "../connection.php";
+
+$id = $_GET['id'];
+
+$query = $conn->query("SELECT * FROM data_mhs WHERE data_id='$id'");
+$row = $query->fetch_assoc();
 ?>
 
 <!DOCTYPE html>
@@ -16,9 +21,9 @@ include "../connection.php";
   <h3>Form</h3>
     <form action="" method="POST">
       <label for="nim">NIM:</label><br>
-      <input type="number" id="nim" name="nim" ><br>
+      <input type="number" id="nim" name="nim" value="<?php echo $row['data_nim']; ?>"><br>
       <label for="nama">Nama:</label><br>
-      <input type="text" id="nama" name="nama" ><br><br>
+      <input type="text" id="nama" name="nama" value="<?php echo $row['data_nama']; ?>"><br><br>
       <button type="submit" name="update">Update</button>
     </form>
     
