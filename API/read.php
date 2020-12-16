@@ -1,8 +1,8 @@
 <?php
-include '../../connection.php';
+include '../../connection_api.php';
 
 $query = "SELECT * FROM data_mhs";
-$result = mysqli_query($connn, $query);
+$result = mysqli_query($conn, $query);
 $array_data = array();
 
 while($row = mysqli_fetch_assoc($result))
