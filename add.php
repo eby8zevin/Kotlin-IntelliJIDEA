@@ -1,3 +1,7 @@
+<?php
+include "../connection.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,9 +22,6 @@
     </form>
 
 <?php
-	
-include "../connection.php";
-
   if(isset($_POST['simpan'])) {
   
   $nim = $_POST['nim'];
