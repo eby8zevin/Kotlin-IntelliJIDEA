@@ -39,7 +39,7 @@ include "../connection.php";
           <td><?php echo $row['data_nama']; ?></td>
           <td>
             <a href="edit.php?editdata&id=<?php echo $row['data_id']; ?>">Edit</a>
-            <a href="delete.php?deletedata&id=<?php echo $row['data_id']; ?>" style="float: right;" onclick="return confirm('Are you sure you want to delete name <?php echo $pecah['data_nama']; ?> ?')">Delete</a>
+            <a href="delete.php?deletedata&id=<?php echo $row['data_id']; ?>" style="float: right;" onclick="return confirm('Are you sure you want to delete name <?php echo $row['data_nama']; ?> ?')">Delete</a>
           </td>
         </tr>
       </tbody>
