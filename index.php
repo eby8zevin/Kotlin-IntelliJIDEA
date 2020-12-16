@@ -34,7 +34,7 @@ include '../connection.php';
         <?php $query = $conn->query("SELECT * FROM data_mhs ORDER BY data_nim ASC"); ?>
         <?php while($row = $query->fetch_assoc()) { ?>
         <tr>
-          <td><?php echo $no; ?></td>
+          <td style="text-align: center;"><?php echo $no; ?></td>
           <td><?php echo $row['data_nim']; ?></td>
           <td><?php echo $row['data_nama']; ?></td>
           <td>
