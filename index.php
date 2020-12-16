@@ -44,7 +44,7 @@ include "../connection.php";
         </tr>
       </tbody>
       <?php $no++ ?>
-      <?php } ?>
+      <?php } $conn->close(); ?>
     </table>
   </div>
 
