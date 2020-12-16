@@ -17,6 +17,7 @@ include '../connection.php';
         date_default_timezone_set('Asia/Jakarta');
         echo date('d F Y H:i:s'); 
       ?></p>
+    <a href="add.php">Add</a>
     <table border="1" width="700px">
       <thead>
         <tr>
