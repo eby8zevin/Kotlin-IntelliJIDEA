@@ -26,6 +26,7 @@ include '../connection.php';
           <th>No</th>
           <th>NIM</th>
           <th>Nama</th>
+          <th>Aksi</th>
         </tr>
       </thead>
       <tbody>
@@ -36,6 +37,10 @@ include '../connection.php';
           <td><?php echo $no; ?></td>
           <td><?php echo $row['data_nim']; ?></td>
           <td><?php echo $row['data_nama']; ?></td>
+          <td>
+            <a href="edit.php?editdata&id=<?php echo $row['data_id']; ?>">Edit</a>
+            <a href="delete.php?deletedata&id=<?php echo $row['data_id']; ?>">Delete</a>
+          </td>
         </tr>
       </tbody>
       <?php $no++ ?>
