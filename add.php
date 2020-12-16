@@ -12,13 +12,14 @@ include "../connection.php";
 <meta name="author" content="Ahmad Abu Hasan" />
 </head>
 <body>
+  <p><a href="index.php"></a>Back</p>
   <h3>Form</h3>
     <form action="" method="POST">
       <label for="nim">NIM:</label><br>
       <input type="number" id="nim" name="nim"><br>
       <label for="nama">Nama:</label><br>
       <input type="text" id="nama" name="nama"><br><br>
-      <button type="submit" name="simpan">Simpan</button>
+      <button type="submit" name="simpan">Save</button>
     </form>
 
 <?php
