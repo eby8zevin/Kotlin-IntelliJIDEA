@@ -17,27 +17,27 @@ include "../connection.php";
     <form action="" method="POST">
       <label for="nim">NIM:</label><br>
       <input type="number" id="nim" name="nim"><br>
-      <label for="nama">Nama:</label><br>
+      <label for="nama">Name:</label><br>
       <input type="text" id="nama" name="nama"><br><br>
       <button type="submit" name="simpan">Save</button>
     </form>
 
 <?php
-  if(isset($_POST['simpan'])) {
+  if (isset($_POST['simpan'])) {
   
   $nim = $_POST['nim'];
   $nama = $_POST['nama'];
     
  $query = $conn->query("SELECT * FROM data_mhs WHERE data_nim='$nim'");
   if ($query->num_rows==1) {
-	  echo "<script>alert('NIM sudah digunakan.')</script>";
+	  echo "<script>alert('NIM already used.')</script>";
 	  echo "<meta http-equiv='refresh' content='0;url=add.php?adddata=failed'>";
   } else {
 	  $conn->query("INSERT INTO data_mhs (data_nim, data_nama)
 	  					VALUES ('$nim',
 							'$nama')
 							");
-	  echo "<script>alert('Data berhasil disimpan.');</script>";
+	  echo "<script>alert('Data saved successfully.');</script>";
 	  echo "<script>location='index.php>=?adddata=succes'</script>";
   }
 }
