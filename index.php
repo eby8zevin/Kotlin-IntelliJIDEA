@@ -12,8 +12,8 @@ include "../connection.php";
 <meta name="author" content="Ahmad Abu Hasan" />
 </head>
 <body>
-  <center><font color="red" size="100"><b>M A I N T E N A N C E</b></font></center>
-  <div align="center">
+<!--   <center><font color="red" size="100"><b>M A I N T E N A N C E</b></font></center> -->
+  <div align="center" padding="100px">
     <h3>My Project in PHP.ID<br>jancukers.com</h3>
       <p><?php
         date_default_timezone_set('Asia/Jakarta');
@@ -25,8 +25,8 @@ include "../connection.php";
         <tr>
           <th>No</th>
           <th>NIM</th>
-          <th>Nama</th>
-          <th>Aksi</th>
+          <th>Name</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody>
@@ -39,7 +39,7 @@ include "../connection.php";
           <td><?php echo $row['data_nama']; ?></td>
           <td>
             <a href="edit.php?editdata&id=<?php echo $row['data_id']; ?>">Edit</a>
-            <a href="delete.php?deletedata&id=<?php echo $row['data_id']; ?>" style="float: right;">Delete</a>
+            <a href="delete.php?deletedata&id=<?php echo $row['data_id']; ?>" style="float: right;" onclick="return confirm('Are you sure you want to delete name <?php echo $pecah['data_nama']; ?> ?')">Delete</a>
           </td>
         </tr>
       </tbody>
