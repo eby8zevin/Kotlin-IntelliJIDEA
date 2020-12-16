@@ -4,6 +4,7 @@ $user = "username";
 $pass = "password";
 $dbnm = "dbname";
 
+// MySQLi Procedural
 $conn = mysqli_connect($host, $user, $pass, $dbnm);
 
 // Check connection
