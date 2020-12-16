@@ -28,7 +28,7 @@ include "../connection.php";
   $nama = $_POST['nama'];
     
   $query = $conn->query("SELECT * FROM data_mhs WHERE data_nim='$nim'");
-  if ($query->nuw_rows()==1) {
+  if ($query->num_rows()==1) {
 	  echo "<script>alert('NIM sudah digunakan.')</script>";
 	  echo "<meta http-equiv='refresh' content='0;url=add.php?adddata=failed'>";
   } else {
