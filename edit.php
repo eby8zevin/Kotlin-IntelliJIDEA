@@ -1,10 +1,10 @@
 <?php
 include "../connection.php";
 
-// $id = $_GET['id'];
+$id = $_GET['id'];
 
-// $query = $conn->query("SELECT * FROM data_mhs WHERE data_id='$id'");
-// $row = $query->fetch_assoc();
+$query = $conn->query("SELECT * FROM data_mhs WHERE data_id='$id'");
+$row = $query->fetch_assoc();
 ?>
 
 <!DOCTYPE html>
