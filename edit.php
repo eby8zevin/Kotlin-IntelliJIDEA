@@ -1,16 +1,16 @@
 <?php
 include "../connection.php";
 
-$id = $_GET['id'];
+// $id = $_GET['id'];
 
-$query = $conn->query("SELECT * FROM data_mhs WHERE data_id='$id'");
-$row = $query->fetch_assoc();
+// $query = $conn->query("SELECT * FROM data_mhs WHERE data_id='$id'");
+// $row = $query->fetch_assoc();
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Add</title>
+<title>Edit</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="WEB" />
@@ -38,10 +38,10 @@ $row = $query->fetch_assoc();
                               WHERE data_id='$id'");
   
   echo "<script>alert('Data berhasil diupdate.');</script>";
-	echo "<script>location='index.php?editdata=succes';</script>";
+  echo "<script>location='index.php?editdata=succes';</script>";
   }
   
-//$conn->close();
+$conn->close();
 ?>
 
 </body>
