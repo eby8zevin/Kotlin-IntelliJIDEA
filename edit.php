@@ -41,7 +41,7 @@ $row = $query->fetch_assoc();
 	echo "<script>location='index.php?editdata=succes';</script>";
   }
   
-$conn->close();
+//$conn->close();
 ?>
 
 </body>
