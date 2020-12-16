@@ -1,5 +1,5 @@
 <?php
-include 'connection.php';
+include '/public_html/connection.php';
 ?>
 
 <!DOCTYPE html>
