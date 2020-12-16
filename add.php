@@ -12,7 +12,7 @@ include "../connection.php";
 <meta name="author" content="Ahmad Abu Hasan" />
 </head>
 <body>
-  <p><a href="index.php"></a>Back</p>
+  <p><a href="index.php">Back</a></p>
   <h3>Form</h3>
     <form action="" method="POST">
       <label for="nim">NIM:</label><br>
