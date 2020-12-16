@@ -38,7 +38,7 @@ include "../connection.php";
 							");
 	  echo "<script>alert('Data berhasil disimpan.');</script>";
 	  echo "<script>location='index.php>=?adddata=succes'</script>";
-  }
+  //}
 }
 $conn->close();
 ?>
