@@ -2,7 +2,7 @@
 include '../github/connection.php';
 
 $query = "SELECT * FROM data_mhs";
-$result = mysqli_query($conn, $query);
+$result = mysqli_query($connn, $query);
 $array_data = array();
 
 while($row = mysqli_fetch_assoc($result))
