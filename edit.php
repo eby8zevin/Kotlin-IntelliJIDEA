@@ -1,7 +1,5 @@
 <?php
 include "../connection.php";
-
-
 ?>
 
 <!DOCTYPE html>
@@ -24,22 +22,7 @@ include "../connection.php";
       <button type="submit" name="update">Update</button>
     </form>
     
-<?php
-  if (isset($_POST['update']) {
-  
-  $nim = $_POST['nim'];
-  $nama = $_POST['nama'];
-  
-  $conn->query("UPDATE data_mhs SET data_nim='$nim',
-                                    data_nama='$nama'
-                              WHERE data_id='$id'");
-  
-  echo "<script>alert('Data berhasil diupdate.');</script>";
-  echo "<script>location='index.php?editdata=succes';</script>";
-  }
-  
-$conn->close();
-?>
+
 
 </body>
 </html>
