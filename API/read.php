@@ -1,5 +1,5 @@
 <?php
-include 'connection.php';
+include '../connection.php';
 
 $query = "SELECT * FROM data_mhs";
 $result = mysqli_query($conn, $query);
