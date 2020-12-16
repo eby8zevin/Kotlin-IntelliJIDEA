@@ -22,7 +22,7 @@ $row = $query->fetch_assoc();
     <form action="" method="POST">
       <label for="nim">NIM:</label><br>
       <input type="number" id="nim" name="nim" value="<?php echo $row['data_nim']; ?>" readonly><br>
-      <label for="nama">Nama:</label><br>
+      <label for="nama">Name:</label><br>
       <input type="text" id="nama" name="nama" value="<?php echo $row['data_nama']; ?>"><br><br>
       <button type="submit" name="update">Update</button>
     </form>
@@ -37,7 +37,7 @@ $row = $query->fetch_assoc();
                                     data_nama='$nama'
                               WHERE data_id='$id'");
   
-  echo "<script>alert('Data berhasil diupdate.');</script>";
+  echo "<script>alert('Data updated successfully.');</script>";
   echo "<script>location='index.php?editdata=succes';</script>";
   }
   
