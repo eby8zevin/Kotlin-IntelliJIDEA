@@ -17,7 +17,7 @@ include "../connection.php";
       <label for="nim">NIM:</label><br>
       <input type="number" id="nim" name="nim"><br>
       <label for="nama">Nama:</label><br>
-      <input type="text" id="nama" name="nama"><br>
+      <input type="text" id="nama" name="nama"><br><br>
       <button type="submit" name="simpan">Simpan</button>
     </form>
 
