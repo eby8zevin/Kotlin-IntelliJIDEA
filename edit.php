@@ -31,7 +31,7 @@ include "../connection.php";
   if (isset($_POST['update']) {
   
   $nim = $_POST['nim'];
-  $nama = $POST['nama'];
+  $nama = $_POST['nama'];
   
   $conn->query("UPDATE data_mhs SET data_nim='$nim',
                                     data_nama='$nama'
