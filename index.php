@@ -12,7 +12,7 @@ include "../connection.php";
 <meta name="author" content="Ahmad Abu Hasan" />
 </head>
 <body>
-<!--   <center><font color="red" size="100"><b>M A I N T E N A N C E</b></font></center> -->
+  <center><font color="red" size="100"><b>php.id</b></font></center>
   <div align="center" padding="100px">
     <h3>My Project in PHP.ID<br>jancukers.com</h3>
       <p><?php
