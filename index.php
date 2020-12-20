@@ -47,6 +47,5 @@ include "../connection.php";
       <?php } $conn->close(); ?>
     </table>
   </div>
-
 </body>
 </html>
