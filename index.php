@@ -16,13 +16,14 @@ include "../connection.php";
     <link rel="manifest" href="site.webmanifest">
   </head>
   <body>
-  <center><font color="red" size="100"><b>php.id</b></font></center>
-  <div align="center" padding="100px">
-    <h3>My Project in PHP.ID<br>jancukers.com</h3>
+    
+    <center><font color="red" size="100"><b>php.id</b></font></center>
+    <div align="center" padding="100px">
+      <h3>My Project in PHP.ID<br>jancukers.com</h3>
       <p><?php
         date_default_timezone_set('Asia/Jakarta');
         echo date('d F Y H:i:s'); 
-      ?></p>
+        ?></p>
     <a href="add.php">Add</a> || <a href="https://ahmadabuhasan.me/github/API">API</a> || <a href="https://github.com/eby8zevin/ahmadabuhasan.me">Source Code</a>
     <table border="1" width="700px">
       <thead>
@@ -51,5 +52,6 @@ include "../connection.php";
       <?php } $conn->close(); ?>
     </table>
   </div>
-</body>
+
+  </body>
 </html>
