@@ -11,6 +11,7 @@ include "../connection.php";
 <meta name="description" content="WEB" />
 <meta name="author" content="Ahmad Abu Hasan" />
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 </head>
 <body>
   <center><font color="red" size="100"><b>php.id</b></font></center>
