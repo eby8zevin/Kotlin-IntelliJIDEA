@@ -1,0 +1,12 @@
+{
+    "name": "Start on Heroku: Node.js",
+    "description": "Dicoding - Notes App Back-End",
+    "repository": "https://github.com/eby8zevin/notes-app-back-end",
+    "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/main/public/node.svg",
+    "keywords": [
+        "dicoding", 
+        "nodejs", 
+        "heroku"
+    ],
+    "image": "heroku/nodejs"
+}
