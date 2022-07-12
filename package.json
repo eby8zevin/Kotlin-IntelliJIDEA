@@ -26,7 +26,8 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.23.4",
     "nodemon": "^2.0.19",
-    "got": "^11.8.5"
+    "got": "^11.8.5",
+    "ansi-regex": "^4.1.1"
   },
   "dependencies": {
     "@hapi/hapi": "^20.1.3",
